@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <launch>
 
 <rosparam file="$(find diff_bot_description)/launch/controller.yaml" command="load"/>
@@ -6,4 +7,14 @@
   <remap from="/joint_states" to="/diff_bot/joint_states"/>
 </node>
 
+=======
+<launch>
+
+<rosparam file="$(find diff_bot_description)/launch/controller.yaml" command="load"/>
+<node name="controller_spawner" pkg="controller_manager" type="spawner" respawn="false" output="screen" ns="diff_bot" args="joint_state_controller "/>
+<node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" respawn="false" output="screen">
+  <remap from="/joint_states" to="/diff_bot/joint_states"/>
+</node>
+
+>>>>>>> 59ec8b725853a9c3a5d5e74e96c156a65ed5fb94
 </launch>

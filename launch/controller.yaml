@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 diff_bot_controller:
   # Publish all joint states -----------------------------------
   joint_state_controller:
@@ -5,3 +6,12 @@ diff_bot_controller:
     publish_rate: 50
 
   # Position Controllers --------------------------------------
+=======
+diff_bot_controller:
+  # Publish all joint states -----------------------------------
+  joint_state_controller:
+    type: joint_state_controller/JointStateController
+    publish_rate: 50
+
+  # Position Controllers --------------------------------------
+>>>>>>> 59ec8b725853a9c3a5d5e74e96c156a65ed5fb94

@@ -1,0 +1,1 @@
+/home/srinjoy/slam_ws/build/slam_bot/ament_cmake_core/slam_botConfig-version.cmake
